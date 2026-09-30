@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBER THENULA X MD</title>
+  <meta name="description" content="CYBER THENULA X MD WhatsApp Bot">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-logo">CT</div>
+      <div>
+        <strong>CYBER THENULA X MD</strong>
+        <span>WhatsApp Bot</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#actions">Quick Actions</a>
+      <a href="#plugins">Plugins</a>
+      <a href="#support">Support</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-badge">⚡ CYBER THENULA X MD</div>
+      <h1>Powerful WhatsApp Bot<br><span>Made for Everyone.</span></h1>
+      <p>
+        Pair your WhatsApp account, explore plugins and manage your bot
+        from one clean dashboard.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#actions">Get Started</a>
+        <a class="btn secondary" href="#plugins">Community Plugins</a>
+      </div>
+    </section>
+
+    <section class="support-card" id="support">
+      <div class="support-icon">♥</div>
+      <div class="support-text">
+        <h2>Donate / Support Us</h2>
+        <p>Support the development of CYBER THENULA X MD and help keep the project active.</p>
+      </div>
+      <div class="support-buttons">
+        <a href="#" onclick="showNotice('Binance support link එක මෙතනට දාන්න.')">CRYPTO</a>
+        <a href="#" onclick="showNotice('ඔයාගේ Binance Pay link එක මෙතනට දාන්න.')">BINANCE</a>
+      </div>
+    </section>
+
+    <section id="actions" class="section">
+      <div class="section-title">
+        <div class="title-icon">ϟ</div>
+        <div>
+          <h2>Quick Actions</h2>
+          <p>Essential pairing, plugins, and tools</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">▦</div>
+          <h3>Get Session ID</h3>
+          <p>Generate or connect your WhatsApp session. Required for running your bot.</p>
+          <div class="tags"><span>ESSENTIAL</span><span>SETUP</span></div>
+          <button class="card-btn" onclick="showNotice('Session ID page එක මෙතනට connect කරන්න.')">Open Session</button>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⌘</div>
+          <h3>Pairing Code</h3>
+          <p>Use a pairing-code based connection page for your WhatsApp bot.</p>
+          <div class="tags"><span>PAIRING</span><span>SETUP</span></div>
+          <button class="card-btn" onclick="showNotice('Pairing Code backend එක මෙතනට connect කරන්න.')">Open Pairing</button>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⚙</div>
+          <h3>Bot Dashboard</h3>
+          <p>View bot status, uptime, memory usage and basic runtime information.</p>
+          <div class="tags"><span>TOOLS</span><span>STATUS</span></div>
+          <button class="card-btn" onclick="showNotice('Bot dashboard API එක මෙතනට connect කරන්න.')">Open Dashboard</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="plugins" class="section">
+      <div class="section-title">
+        <div class="title-icon">✚</div>
+        <div>
+          <h2>Community Plugins</h2>
+          <p>Discover useful commands and extensions</p>
+        </div>
+      </div>
+
+      <div class="plugin-grid">
+        <article class="plugin">
+          <div class="plugin-icon">🎵</div>
+          <div>
+            <h3>Music</h3>
+            <p>Download and play audio from supported sources.</p>
+          </div>
+        </article>
+        <article class="plugin">
+          <div class="plugin-icon">🎬</div>
+          <div>
+            <h3>Video</h3>
+            <p>YouTube video tools for your bot.</p>
+          </div>
+        </article>
+        <article class="plugin">
+          <div class="plugin-icon">🌦️</div>
+          <div>
+            <h3>Weather</h3>
+            <p>Check weather information from chat.</p>
+          </div>
+        </article>
+        <article class="plugin">
+          <div class="plugin-icon">🛠️</div>
+          <div>
+            <h3>Utilities</h3>
+            <p>Useful everyday commands and bot tools.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>CYBER THENULA X MD</strong><br><span>Built with ⚡ for WhatsApp automation</span></div>
+    <div>© <span id="year"></span> CYBER THENULA X MD</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
